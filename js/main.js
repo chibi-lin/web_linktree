@@ -31,7 +31,7 @@
     })
   );
 
-  const savedTab = localStorage.getItem('activeTab') || 'aboutme';
+  const savedTab = localStorage.getItem('activeTab') || 'links';
   activate(savedTab);
 
   const backToTopBtn = document.querySelector('.back-to-top');
