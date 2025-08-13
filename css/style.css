@@ -265,7 +265,7 @@ header.site-header {
   color: var(--text-color);
 }
 
-#aboutme {
+#aboutme{
   margin: 18px auto 8px;
   max-width: 460px;
   color: var(--text-color);
