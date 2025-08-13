@@ -31,8 +31,13 @@
     })
   );
 
-  const savedTab = localStorage.getItem('activeTab') || 'links';
+const savedTab = localStorage.getItem('activeTab');
+if (savedTab) {
   activate(savedTab);
+} else {
+  activate('links');
+  localStorage.setItem('activeTab', 'links');
+}
 
   const backToTopBtn = document.querySelector('.back-to-top');
   if (backToTopBtn) {
